@@ -1,0 +1,23 @@
+{
+   "author": "Gleb Mazovetskiy",
+   "content_scripts": [ {
+      "js": [ "RenderWhitespaceOnGithub.user.js" ],
+      "matches": [ "https://gist.github.com/*", "https://github.com/*", "https://git.corp.adobe.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Renders spaces as · and tabs as → in all the code on GitHub.",
+   "homepage_url": "https://github.com/glebm/render-whitespace-on-github",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4qbc8wwT/NSeqfGZ+BJTAm3fcUdI5nYq+znAMeCiRSZckQf3zGiQzajKmT4AP2YLXrsoj9AiQFyChs+r6y/GD/k+0FppjGk2Ce14gWAARq7Pmxfp6jMGDgsil+2UBsNvyIU9HOtSuzg2VGxi6aEn4xCYHNy8ekG3Hk+EkduPwtPm1sS9c+FhDp8UKPx5At2kutQCWw8fSPs3qyN8vMgU1h329vWV3Zh3sEZ9PVmcfL0+wVT1rVBSKednL6VSFxcD+VYFmJDbq2NUmSkILF+nlG8q1PjX1Jm4usMmjqa4zHUYKPWCG5izZvuIUAKhOI6G2LSV4EUp2OnVGeqZDT2ZmwIDAQAB",
+   "manifest_version": 2,
+   "name": "Render Whitespace on GitHub",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.12"
+}
